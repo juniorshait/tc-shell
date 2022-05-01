@@ -1,2 +1,2 @@
 #!/bin/bash
-list.txt << "C# C Javascript Perl PHP PHP ASP R Go C# C++ R Perl Javascript Javascript Python Javascript Javascript Javascript Java Java Python Javascript Javascript Javascript ASP" | sort | uniq > dados_nao_repetidos.txt
+cat arquivo_lista | sort | uniq -u > dados_nao_repetidos.txt
