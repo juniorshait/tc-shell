@@ -1,2 +1,2 @@
 #!/bin/bash
-cat arquivo_lista | sort | uniq -u > dados_nao_repetidos.txt
+cat arquivo_lista | sort | uniq -u | awk -F'.nds' '{print $1}'
